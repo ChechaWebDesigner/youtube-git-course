@@ -52,6 +52,9 @@ Por ultimo podriamos eliminar la rama master con un git push origin --delete mas
 
 simplemente hacemos lo siguiente
 
+git init
+git add .
 git branch -m main
 git remote add origin ruta
+git commit -m ""
 git push -u origin main
