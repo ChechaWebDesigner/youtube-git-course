@@ -1,0 +1,58 @@
+¿Que es Git?
+
+Git es un gestor de versiones que me permite tener un mejor control sobre los archivos que tengo. De igual forma es desentralizado, puesto que permite que cada quien trabaje de manera independiente
+
+
+
+Flujo Basico
+
+- Working Directory : Es mi lugar de trabajo, basicamente mi computadora y es el area en donde se realizan los cambios. De igual forma en este momento GIT aun no tiene registrado mi cambio, unicamente yo.
+
+  Estado: modified
+
+- Index / Staging : Es en este punto en que git comienza a notar los cambios y a tomarlos en cuenta. Es con el comando git add. Es la zona como mas constante, pero aun no es oficial el cambio, es tipo git lo noto, pero aun no lo ha puesto como tal. 
+
+  Estado: staged -> Staged es escenificado
+
+- Head / Local : En este punto el cambio ya es oficial y dice la info de quien hizo el cambio, nombre del cambio y fecha en que lo hizo dicha persona.  El comando seria un git commit
+
+  Estado: commited -> Commited significa comprometido
+
+- Github / Remote : Es cuando ya se encuentra en el reporsitorio remoto. El comando seria un git push
+
+  Estado: remote
+
+Los primeros tres flujos suceden dentro de mi computadora, el ultio que seria el remote ya sucede de forma remota y aparece el codigo hosteado.
+
+Para poder descargar los cambios del directorio remoto a mi directorio local es el git pull. Este comando me permite como que reiniciar el ciclo. 
+
+Comandos ->
+
+# agregar los cambios de un archivo al staged
+git add archivo/directorio
+# agregar todos los cambios de todos los archivos al staged
+git add .
+
+
+# los cambios son comprometidos en el repositorio
+# debes escribir el mensaje del cambio
+# cuando se abra el archivo de configuración
+# al terminar guarda y cierra el archivo
+# para que los cambios tengan efecto
+git commit
+# es un shortcut del comando anterior
+# escribes y confirmas el mensaje del cambio en un sólo paso
+git commit -m "mensaje descriptivo del cambio"
+
+
+# se agrega el origen remoto de tu repositorio de GitHub
+git remote add origin https://github.com/usuario/repositorio.git
+# la primera vez que vinculamos el repositorio remoto con el local
+git push -u origin master
+# para las subsecuentes actualizaciones, sino cambias de rama
+git push
+
+
+#para descargar los cambios del repositorio remoto al local
+git pull
+
