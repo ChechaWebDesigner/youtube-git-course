@@ -58,3 +58,17 @@ git branch -m main
 git remote add origin ruta  
 git commit -m ""  
 git push -u origin main  
+
+## Ignorando archivos
+
+Para ignorar archivos es como usar expresiones regulares
+
+El # me sirve para comentarios
+
+*.txt Todos los archivos txt
+
+doc/*.txt Todos los archivos txt dentro de doc
+
+doc/**/\*.txt Todos los archivos txt que esten en cualquier subcarpeta de doc
+
+!yoNo.txt Este .txt no lo elimino, es decir si lo subo.
