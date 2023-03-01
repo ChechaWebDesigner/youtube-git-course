@@ -29,3 +29,29 @@ comando: git commit
 Consiste en los cambios que se encuentran en el directorio remoto
 
 comando: git push
+
+## Master a Main
+
+Pasamos de Master a Main por un tema social y politico. No es un tema de programación. 
+
+### Pasando de master a main
+
+#### Repositorios existentes
+
+Primero creamos la rama main con git branch -m master main
+
+Luego cambiamos el push -u originb. git push -u origin main
+
+Luego cambiamos el flujo del head, la tercera etapa. git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
+
+Luego vamos a github y en configuracion de branches cambiamos de master a main.
+
+Por ultimo podriamos eliminar la rama master con un git push origin --delete master
+
+#### Repositorios nuevos
+
+simplemente hacemos lo siguiente
+
+git branch -m main
+git remote add origin ruta
+git push -u origin main
