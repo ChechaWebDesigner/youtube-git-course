@@ -128,3 +128,14 @@ comando preferido: git status -s
 ## ¿De donde viene el -u?
 
 El -u proviene de la abreviación del comando --set upstream 
+
+## Fusiones
+
+Une dos ramas. Para hacer una fusión necesitamos:
+
+1. Situarnos en la rama que se quedará con el contenido fusionado.
+2. Fusionar.
+Cuando se fusionan ramas se pueden dar 2 resultados diferentes:
+
+- Fast-Forward: La fusión se hace automática, no hay conflictos por resolver.
+- Manual Merge: La fusión hay que hacerla manual, para resolver conflictos de duplicación de contenido.
