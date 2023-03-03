@@ -133,6 +133,16 @@ El -u proviene de la abreviación del comando --set upstream
 
 Es cuando obtenemos una union entre dos ramas. 
 
+Hay dos tipos:
+
+1. Fast-Forward: Las que son automaticas y en ellas no hay conflictos.
+
+2. Manual Merge: Son manuales y en ellas hay conflictos. Ya que cambiamos el mismo archivo en dos ramas y no saben con que contenido quedarse.
+
 comando: git merge rama externa
 
 Ojo: Debo estar en la rama actual, es decir la que quiero que jale la info de la otra rama. 
+
+### Eliminar rama virtual
+
+comando: git push origin --delete name
