@@ -72,3 +72,53 @@ doc/*.txt Todos los archivos txt dentro de doc
 doc/**/\*.txt Todos los archivos txt que esten en cualquier subcarpeta de doc
 
 !yoNo.txt Este .txt no lo elimino, es decir si lo subo.
+
+## Clonar
+
+Es clonar otro repositorio. Basicamente una copia identica.
+
+comando: git clone url.
+
+## Ramas
+
+Es una nueva funcionalidad que añadimos luego a la version principal
+
+### crear rama
+git branch nombre-rama
+
+### cambiar de rama
+git checkout nombre-rama
+
+### crear una rama y cambiarte a ella
+git checkout -b rama
+
+### eliminar rama
+git branch -d nombre-rama
+
+### eliminar ramas remotas
+git push origin --delete nombre-rama
+
+#eliminar rama (forzado)
+git branch -D nombre-rama
+
+### listar todas las ramas del repositorio
+git branch
+
+Basicamente es ver todas las ramas. Tipo un dir o lr en la terminal, pero con git y sus ramas.
+
+### lista ramas no fusionadas a la rama actual
+git branch --no-merged
+
+### lista ramas fusionadas a la rama actual
+git branch --merged
+
+### rebasar ramas
+git checkout rama-secundaria
+git rebase rama-principal
+
+## Status
+
+Me permite ver en que estado se encuentran los documetos. Si estan modificados, en stage, en commit.
+
+comando: git status 
+comando preferido: git status -s
