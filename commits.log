@@ -1,0 +1,166 @@
+commit e62353f483be4b932b1d1826b6946d0fb341eedf
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 20:00:49 2023 -0600
+
+    Añadiendo parrafos
+
+commit b876fe532a16c3120c6e084b297fb4da8d59771e
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:58:52 2023 -0600
+
+    nuevo
+
+commit 680c0bebfd187e2d6c80076edf7bc9f748721ea6
+Merge: 4946ba5 3121d71
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:58:18 2023 -0600
+
+    Nuevo commit a partir de un conflicto por el amend.
+
+commit 4946ba5707fc3efb82872103675e4f8af6127acd
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:44:41 2023 -0600
+
+    Cambiando el commit antiguo, con su nombre incluido
+
+commit 3121d71a7554df603bd502e8676a6d5bcbcbbc49
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:44:41 2023 -0600
+
+    Añadiendo las estaciones del año
+
+commit 936a48d08c93eeae3f5cfc48b1c85ac03a5aa90a
+Merge: a27787f da1818b
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:39:02 2023 -0600
+
+    resolviendo conflicto merge main/html en el documento index.html
+
+commit da1818b8f87b9fb64cc74fd07437e53801304f94
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:32:11 2023 -0600
+
+    Añadiendo index.js al index.html
+
+commit a27787f318993636f5b4c74a4a7e04118b0b8b7b
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:30:41 2023 -0600
+
+    Agregando style.css al index.html
+
+commit 87168f9bbcf5f4e051995896f799d341d98ece91
+Merge: ed499c8 b9a58ce
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:20:22 2023 -0600
+
+    Merge branch 'js'
+
+commit ed499c84daafadcc82fef8f41826e63a6997dcbf
+Merge: 2d1b728 62d1368
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:20:13 2023 -0600
+
+    union con css
+
+commit 2d1b728f0075c4af527af297746753002b1ad881
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:15:15 2023 -0600
+
+    camvbios nuevos
+
+commit bca30f32571fc9ba141458e4dad858d5c52ff9e5
+Merge: 7428e54 7c38f1f
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:14:08 2023 -0600
+
+    sepa q paso
+
+commit 7428e540eccccbbc304d4660b04a59e067b1d3fd
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:11:58 2023 -0600
+
+    añadiendo fusiones
+
+commit b9a58ced8b06b707a143bff36fb85c3aac365b63
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:04:15 2023 -0600
+
+    Añadiendo JS
+
+commit 789f0788e59e20e071558b1449604445f5556824
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 19:01:16 2023 -0600
+
+    Aññadiendo cambios
+
+commit 62d1368881174d3b2e010e23af77d457a8e7810c
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 18:57:55 2023 -0600
+
+    cambios
+
+commit a709a07d7b58852dd7c2ebbae0c7da95d7852333
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 18:52:56 2023 -0600
+
+    Creando css
+
+commit 7c38f1f9928920fcc21ad6b311a792742bac19cc
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Thu Mar 2 18:47:45 2023 -0600
+
+    Creando archivo index.html
+
+commit bef5f9810ab31d0fb6af2fd7190a544f917f9213
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Wed Mar 1 17:13:10 2023 -0600
+
+    Ignorando archivos
+
+commit d8364b4b0fb1d29017b1ec75890b0620fb1ff6a2
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Wed Mar 1 17:06:45 2023 -0600
+
+    con saltos
+
+commit f42fcfcf241a78a1640dac509e463725bc5189e2
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Wed Mar 1 17:05:25 2023 -0600
+
+    repo nuevos
+
+commit 3fa9ad129224dc1abf163b5332418a447662e691
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Wed Mar 1 16:58:40 2023 -0600
+
+    añadiendo main
+
+commit 2d3cdd476a295825b018007e3a4d5d200f277aaa
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Wed Mar 1 16:43:52 2023 -0600
+
+    Cambios de comando pull
+
+commit ba4ad767651b02adbce8ee17a001b2b99c1f3b60
+Author: César Joel González Oliva <113487509+ChechaWebDesigner@users.noreply.github.com>
+Date:   Wed Mar 1 16:41:00 2023 -0600
+
+    Creando licencia del reporsitorio
+
+commit 7379861038a73ab2f80d8bcbe4ef125c6da41600
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Wed Mar 1 16:34:02 2023 -0600
+
+    Cambios nuevos
+
+commit f800eb69b34e9d5698fa47a3322b5844a129bf3c
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Wed Mar 1 16:22:09 2023 -0600
+
+    Mi segundo commit jeje
+
+commit 64a72c8f7301be29652f6f4febd73c75fa9acc27
+Author: Cesar Gonzalez <cesar.gonzalez.2004.dw@gmail.com>
+Date:   Wed Mar 1 16:17:08 2023 -0600
+
+    primer commit :D

@@ -187,9 +187,47 @@ git log --after="2019-07-07 00:00:00" --before="2019-07-08 00:00:00"
 \# muestra una gráfica del historial de cambios, rama y fusiones  
 git log --oneline --graph --all
 
+Para guardar esto en un archivo seria: git log --oneline --graph --all > graph.txt
+
 \# muestra todo el registro de acciones del log  
 \# incluyendo inserciones, cambios, eliminaciones, fusiones, etc.  
 git reflog
 
+Basicamente me muestra todos los cambios que han habido, no solo los commit. Tambien los movimientos entre ramas o versiones, etc.
+
 \# diferencias entre el Working Directory y el Staging Area  
 git diff
+
+## Reseteo del historial
+
+Es eliminar cierta parte del historial.
+
+### Soft
+
+Seria suave o blando, ya que borra lo que hay en el head. 
+
+### Mixed
+
+Borra lo que hay en el staging y head.
+
+### Hard
+
+Borra lo q hay en el head, staging y working directory
+
+#nos muestra el listado de archivos nuevos (untracked), borrados o editados
+git status
+
+\# borra HEAD  
+git reset --soft
+
+\# borra HEAD y Staging  
+git reset --mixed
+
+\# borra todo: HEAD, Staging y Working Directory  
+git reset --hard
+
+\# deshace todos los cambios después del commit indicado, preservando los cambios localmente  
+git reset id-commit
+
+\# desecha todo el historial y regresa al commit especificado  
+git reset --hard id-commit
