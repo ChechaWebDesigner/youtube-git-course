@@ -2,6 +2,8 @@
 
 Empezando con Git y GitHub
 
+Version: **1.0.0**
+
 ## Flujo basico
 
 ### Working Directory
