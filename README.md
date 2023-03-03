@@ -146,3 +146,16 @@ Ojo: Debo estar en la rama actual, es decir la que quiero que jale la info de la
 ### Eliminar rama virtual
 
 comando: git push origin --delete name
+
+## Cambios
+
+Esto es para agregar cambios al ultimo commit, sin realizar uno nuevo. 
+
+\# sin editar el mensaje del último commit
+git commit --amend --no-edit
+
+\# editando el mensaje del último commit
+git commit --amend -m "nuevo mensaje para el último commit"
+
+\# eliminar el último commit
+git reset --hard HEAD~1
