@@ -129,3 +129,10 @@ comando preferido: git status -s
 
 El -u proviene de la abreviación del comando --set upstream 
 
+## Fusionar
+
+Es cuando obtenemos una union entre dos ramas. 
+
+comando: git merge rama externa
+
+Ojo: Debo estar en la rama actual, es decir la que quiero que jale la info de la otra rama. 
