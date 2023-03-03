@@ -161,3 +161,35 @@ git commit --amend -m "nuevo mensaje para el último commit"
 git reset --hard HEAD~1
 
 Recomendacion: En el momento en que ya hemos hecho un push no es recomendable andar modificando los anteriores commits, ya que habran conflictos. Por ello solo cuando estemos en las primeras tres etapas, no en la 4. 
+
+## Registro del Historial
+
+Nos permite ver las fechas, autores, id y de esta forma tener mejor controlado nuestro proyecto.
+
+Me permite tener en un archivo txt los cambios que he ido haciendo 
+comando: git log > commit.txt  
+
+\# muestra el historial con el formato que indicamos  
+git log --pretty=format:"%h - %an, %ar : %s"
+
+\# cambiamos la n por cualquier número entero y mostrará los n cambios recientes  
+git log -n
+
+\# muestra los cambios realizados después de la fecha especificada  
+git log --after="2019-07-07 00:00:00"
+
+\# muestra los cambios realizados antes de la fecha especificada  
+git log --before="2019-07-08 00:00:00"
+
+\# muestra los cambios realizados en el rango de fecha especificado  
+git log --after="2019-07-07 00:00:00" --before="2019-07-08 00:00:00"
+
+\# muestra una gráfica del historial de cambios, rama y fusiones  
+git log --oneline --graph --all
+
+\# muestra todo el registro de acciones del log  
+\# incluyendo inserciones, cambios, eliminaciones, fusiones, etc.  
+git reflog
+
+\# diferencias entre el Working Directory y el Staging Area  
+git diff
