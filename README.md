@@ -122,3 +122,7 @@ Me permite ver en que estado se encuentran los documetos. Si estan modificados, 
 
 comando: git status 
 comando preferido: git status -s
+
+## ¿De donde viene el -u?
+
+El -u proviene de la abreviación del comando --set upstream 
