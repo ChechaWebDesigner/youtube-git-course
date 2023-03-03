@@ -197,7 +197,7 @@ Basicamente me muestra todos los cambios que han habido, no solo los commit. Tam
 
 \# diferencias entre el Working Directory y el Staging Area  
 git diff
-
+ 
 ## Reseteo del historial
 
 Es eliminar cierta parte del historial.
@@ -231,3 +231,78 @@ git reset id-commit
 
 \# desecha todo el historial y regresa al commit especificado  
 git reset --hard id-commit
+
+## Resetear un repositorio
+
+Es tipo eliminar el historial y tener nuestro repo como si fuese nuevo. 
+
+Comandos
+
+cd carpeta-repositorio  
+mv .git/config ~/saved_git_config  
+rm -rf .git  
+git init  
+git branch -M main  
+git add .  
+git commit -m "Commit inicial"  
+mv ~/saved_git_config .git/config  
+git push --force origin main
+
+## Remote
+
+Es el lugar remoto en donde tendremos los códigos 
+
+\# muestra los orígenes remotos del repositorio  
+git remote
+
+\# muestra los orígenes remotos con detalle  
+git remote -v
+
+\# agregar un orígen remoto  
+git remote add nombre-orígen https://github.com/usuario/repositorio.git
+
+\# renombrar un orígen remoto  
+git remote rename nombre-viejo nombre-nuevo
+
+\# eliminar un orígen remoto  
+git remote remove nombre-orígen
+
+\# descargar una rama remota a local diferente a la principal  
+git checkout --track -b rama-remota origin/rama-remota
+
+## Etiquetas
+
+Nos permite versionar, es decir llevas controladas las diferentes versiones "2.0.0"  
+
+Dado un número de versión MAYOR.MENOR.PARCHE, se incrementa:  
+
+1. La versión MAYOR cuando realizas un cambio incompatible en el API,  
+2. La versión MENOR cuando añades funcionalidad compatible con versiones anteriores, y  
+3. La versión PARCHE cuando reparas errores compatibles con versiones anteriores.  
+
+Hay disponibles etiquetas para prelanzamiento y metadata de compilación como extensiones al formato MAYOR.MENOR.PARCHE.
+
+Comandos
+
+\# listar etiquetas  
+git tag  
+
+\# crea una etiqueta  
+git tag numero-versión  
+
+\# eliminar una etiqueta  
+git tag -d numero-versión  
+
+\# mostrar información de una etiqueta  
+git show numero-versión  
+
+\# sincronizando la etiqueta del repositorio local al remoto  
+git add .  
+git  tag v1.0.0  
+git commit -m "v1.0.0"  
+git push origin numero-versión  
+
+\# generando una etiqueta anotada (con mensaje de commit)  
+git add .    
+git tag -a "v1.0.0" -m "Mensaje de la etiqueta"  
+git push --tags  
