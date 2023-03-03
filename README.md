@@ -157,5 +157,7 @@ git commit --amend --no-edit
 \# editando el mensaje del último commit  
 git commit --amend -m "nuevo mensaje para el último commit"
 
-\# eliminar el último commit  
+\# eliminar el último commit
 git reset --hard HEAD~1
+
+Recomendacion: En el momento en que ya hemos hecho un push no es recomendable andar modificando los anteriores commits, ya que habran conflictos. Por ello solo cuando estemos en las primeras tres etapas, no en la 4. 
