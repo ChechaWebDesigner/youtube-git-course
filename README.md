@@ -10,7 +10,7 @@ Version: **1.0.0**
 
 Consiste en los cambios locales y que git aun no los ha visto.
 
-Ojo: Puedo pasar de remote a working directory por medio del comando git pull. Con este obtengo los cambios que se hayan hecho en el remoto y comienzo a seguir con mi parte. 
+Ojo: Puedo pasar de remote a working directory por medio del comando git pull. Con este obtengo los cambios que se hayan hecho en el remoto y comienzo a seguir con mi parte.
 
 Comando: git pull
 
@@ -34,7 +34,7 @@ comando: git push
 
 ## Master a Main
 
-Pasamos de Master a Main por un tema social y politico. No es un tema de programación. 
+Pasamos de Master a Main por un tema social y politico. No es un tema de programación.
 
 ### Pasando de master a main
 
@@ -59,7 +59,7 @@ git add .
 git branch -m main  
 git remote add origin ruta  
 git commit -m ""  
-git push -u origin main  
+git push -u origin main
 
 ## Ignorando archivos
 
@@ -67,11 +67,11 @@ Para ignorar archivos es como usar expresiones regulares
 
 El # me sirve para comentarios
 
-*.txt Todos los archivos txt
+\*.txt Todos los archivos txt
 
-doc/*.txt Todos los archivos txt dentro de doc
+doc/\*.txt Todos los archivos txt dentro de doc
 
-doc/**/\*.txt Todos los archivos txt que esten en cualquier subcarpeta de doc
+doc/\*\*/\*.txt Todos los archivos txt que esten en cualquier subcarpeta de doc
 
 !yoNo.txt Este .txt no lo elimino, es decir si lo subo.
 
@@ -85,38 +85,47 @@ comando: git clone url.
 
 Es una nueva funcionalidad que añadimos luego a la version principal
 
-Los archivos que creó en otra rama, unicamente aparecerán dentro de la otra rama. Osea si creo una rama a y dentro de ella creo un componente. Dicho componente no aparecerá dentro de la rama main o de las otras. Eso si, la rama en donde creo la otra, tomará como base la rama desde la cual se creó. 
+Los archivos que creó en otra rama, unicamente aparecerán dentro de la otra rama. Osea si creo una rama a y dentro de ella creo un componente. Dicho componente no aparecerá dentro de la rama main o de las otras. Eso si, la rama en donde creo la otra, tomará como base la rama desde la cual se creó.
 
 ### crear rama
+
 git branch nombre-rama
 
 ### cambiar de rama
+
 git checkout nombre-rama
 
 ### crear una rama y cambiarte a ella
+
 git checkout -b rama
 
 ### eliminar rama
+
 git branch -d nombre-rama
 
 ### eliminar ramas remotas
+
 git push origin --delete nombre-rama
 
 #eliminar rama (forzado)
 git branch -D nombre-rama
 
 ### listar todas las ramas del repositorio
+
 git branch
 
 Basicamente es ver todas las ramas. Tipo un dir o lr en la terminal, pero con git y sus ramas.
 
 ### lista ramas no fusionadas a la rama actual
+
 git branch --no-merged
 
 ### lista ramas fusionadas a la rama actual
+
 git branch --merged
 
 ### rebasar ramas
+
 git checkout rama-secundaria
 git rebase rama-principal
 
@@ -124,16 +133,16 @@ git rebase rama-principal
 
 Me permite ver en que estado se encuentran los documetos. Si estan modificados, en stage, en commit.
 
-comando: git status 
+comando: git status
 comando preferido: git status -s
 
 ## ¿De donde viene el -u?
 
-El -u proviene de la abreviación del comando --set upstream 
+El -u proviene de la abreviación del comando --set upstream
 
 ## Fusionar
 
-Es cuando obtenemos una union entre dos ramas. 
+Es cuando obtenemos una union entre dos ramas.
 
 Hay dos tipos:
 
@@ -143,7 +152,7 @@ Hay dos tipos:
 
 comando: git merge rama externa
 
-Ojo: Debo estar en la rama actual, es decir la que quiero que jale la info de la otra rama. 
+Ojo: Debo estar en la rama actual, es decir la que quiero que jale la info de la otra rama.
 
 ### Eliminar rama virtual
 
@@ -151,7 +160,7 @@ comando: git push origin --delete name
 
 ## Cambios
 
-Esto es para agregar cambios al ultimo commit, sin realizar uno nuevo. 
+Esto es para agregar cambios al ultimo commit, sin realizar uno nuevo.
 
 \# sin editar el mensaje del último commit  
 git commit --amend --no-edit
@@ -162,14 +171,14 @@ git commit --amend -m "nuevo mensaje para el último commit"
 \# eliminar el último commit  
 git reset --hard HEAD~1
 
-Recomendacion: En el momento en que ya hemos hecho un push no es recomendable andar modificando los anteriores commits, ya que habran conflictos. Por ello solo cuando estemos en las primeras tres etapas, no en la 4. 
+Recomendacion: En el momento en que ya hemos hecho un push no es recomendable andar modificando los anteriores commits, ya que habran conflictos. Por ello solo cuando estemos en las primeras tres etapas, no en la 4.
 
 ## Registro del Historial
 
 Nos permite ver las fechas, autores, id y de esta forma tener mejor controlado nuestro proyecto.
 
-Me permite tener en un archivo txt los cambios que he ido haciendo 
-comando: git log > commit.txt  
+Me permite tener en un archivo txt los cambios que he ido haciendo
+comando: git log > commit.txt
 
 \# muestra el historial con el formato que indicamos  
 git log --pretty=format:"%h - %an, %ar : %s"
@@ -199,14 +208,14 @@ Basicamente me muestra todos los cambios que han habido, no solo los commit. Tam
 
 \# diferencias entre el Working Directory y el Staging Area  
 git diff
- 
+
 ## Reseteo del historial
 
 Es eliminar cierta parte del historial.
 
 ### Soft
 
-Seria suave o blando, ya que borra lo que hay en el head. 
+Seria suave o blando, ya que borra lo que hay en el head.
 
 ### Mixed
 
@@ -236,7 +245,7 @@ git reset --hard id-commit
 
 ## Resetear un repositorio
 
-Es tipo eliminar el historial y tener nuestro repo como si fuese nuevo. 
+Es tipo eliminar el historial y tener nuestro repo como si fuese nuevo.
 
 Comandos
 
@@ -252,7 +261,7 @@ git push --force origin main
 
 ## Remote
 
-Es el lugar remoto en donde tendremos los códigos 
+Es el lugar remoto en donde tendremos los códigos
 
 \# muestra los orígenes remotos del repositorio  
 git remote
@@ -274,37 +283,55 @@ git checkout --track -b rama-remota origin/rama-remota
 
 ## Etiquetas
 
-Nos permite versionar, es decir llevas controladas las diferentes versiones "2.0.0"  
+Nos permite versionar, es decir llevas controladas las diferentes versiones "2.0.0"
 
-Dado un número de versión MAYOR.MENOR.PARCHE, se incrementa:  
+Dado un número de versión MAYOR.MENOR.PARCHE, se incrementa:
 
-1. La versión MAYOR cuando realizas un cambio incompatible en el API,  
-2. La versión MENOR cuando añades funcionalidad compatible con versiones anteriores, y  
-3. La versión PARCHE cuando reparas errores compatibles con versiones anteriores.  
+1. La versión MAYOR cuando realizas un cambio incompatible en el API,
+2. La versión MENOR cuando añades funcionalidad compatible con versiones anteriores, y
+3. La versión PARCHE cuando reparas errores compatibles con versiones anteriores.
 
 Hay disponibles etiquetas para prelanzamiento y metadata de compilación como extensiones al formato MAYOR.MENOR.PARCHE.
 
 Comandos
 
 \# listar etiquetas  
-git tag  
+git tag
 
 \# crea una etiqueta  
-git tag numero-versión  
+git tag numero-versión
 
 \# eliminar una etiqueta  
-git tag -d numero-versión  
+git tag -d numero-versión
 
 \# mostrar información de una etiqueta  
-git show numero-versión  
+git show numero-versión
 
 \# sincronizando la etiqueta del repositorio local al remoto  
 git add .  
-git  tag v1.0.0  
+git tag v1.0.0  
 git commit -m "v1.0.0"  
-git push origin numero-versión  
+git push origin numero-versión
 
 \# generando una etiqueta anotada (con mensaje de commit)  
-git add .    
+git add .  
 git tag -a "v1.0.0" -m "Mensaje de la etiqueta"  
-git push --tags  
+git push --tags
+
+## GitHub Pages
+
+gh-pages es una rama especial para crear un sitio web a tu proyecto alojado directamente en tu repositorio de GitHub.
+
+- URL del repositorio: https://github.com/usuario/repositorio
+- URL del sitio: https://usuario.github.io/repositorio
+
+Comandos  
+
+git branch gh-pages  
+git checkout gh-pages  
+
+git remote add origin https://github.com/usuario/repositorio.git  
+git push origin gh-pages  
+
+\# para descargar los cambios del repositorio remoto al local  
+git pull origin gh-pages  

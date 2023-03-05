@@ -1,4 +1,22 @@
 body {
   background-color: #000;
   color: #fff;
+  font-family: sans-serif;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  filter: invert();
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    width: 60%;
+  }
 }
