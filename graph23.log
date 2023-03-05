@@ -1,0 +1,41 @@
+* 998896a v1.0.0
+* 548f133 remote
+* 6b37575 Respaldando logs del repo
+* 38c8ebc Cambios historial
+* e62353f Añadiendo parrafos
+* b876fe5 nuevo
+*   680c0be Nuevo commit a partir de un conflicto por el amend.
+|\  
+| * 3121d71 Añadiendo las estaciones del año
+* | 4946ba5 Cambiando el commit antiguo, con su nombre incluido
+|/  
+*   936a48d resolviendo conflicto merge main/html en el documento index.html
+|\  
+| * da1818b Añadiendo index.js al index.html
+* | a27787f Agregando style.css al index.html
+|/  
+*   87168f9 Merge branch 'js'
+|\  
+| * b9a58ce Añadiendo JS
+* |   ed499c8 union con css
+|\ \  
+| * | 62d1368 cambios
+| * | a709a07 Creando css
+* | | 2d1b728 camvbios nuevos
+* | | bca30f3 sepa q paso
+|\| | 
+| * | 7c38f1f Creando archivo index.html
+* | | 7428e54 añadiendo fusiones
+| |/  
+|/|   
+* | 789f078 Aññadiendo cambios
+|/  
+* bef5f98 Ignorando archivos
+* d8364b4 con saltos
+* f42fcfc repo nuevos
+* 3fa9ad1 añadiendo main
+* 2d3cdd4 Cambios de comando pull
+* ba4ad76 Creando licencia del reporsitorio
+* 7379861 Cambios nuevos
+* f800eb6 Mi segundo commit jeje
+* 64a72c8 primer commit :D
