@@ -2,6 +2,8 @@
 
 Empezando con Git y GitHub
 
+Aprendiendo con **Jon**
+
 Version: **1.0.0**
 
 ## Flujo basico
@@ -335,3 +337,12 @@ git push origin gh-pages
 
 \# para descargar los cambios del repositorio remoto al local  
 git pull origin gh-pages  
+
+link de ejemplos jeje: https://chechawebdesigner.github.io/learning-git/  
+
+## Colaboración en GitHub
+
+1. Debo de hacer un fork. Esto se encuentra en el repositorio en la parte superior derecha. 
+2. Una vez creado el fork, unicamente debo clonar el repo.
+3. Debemos tener los dos remotos, el original (nestro por asi decirlo) y el de la copia (el del fork)
+4. Se crea una nueva rama en mi fork local para hacer mis colaboraciones.
